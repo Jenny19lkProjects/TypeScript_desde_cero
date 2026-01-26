@@ -5,7 +5,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
     let exists;
     let power;
     avenger = 'Dr Strange';
-    // console.log(avenger.charAt(0))
     console.log(avenger.charAt(0));
     avenger = 150.232556;
     console.log(avenger.toFixed(2));
