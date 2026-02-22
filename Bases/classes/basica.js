@@ -12,7 +12,8 @@
             this.realName = realName;
         }
     }
-    const antman = new Avenger('Antam', 'Capitan');
+    const antman = new Avenger('Antman', 'Scott Lang', 'Capitan');
     console.log(antman);
+    console.log(Avenger.avgAge);
 })();
 //# sourceMappingURL=basica.js.map
