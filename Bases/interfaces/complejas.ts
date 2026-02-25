@@ -3,11 +3,8 @@
 interface Client{
     name:string;
     age?:number;
-    address:{
-        id:number;
-        zip:string;
-        city:string;
-    }
+    address:Address;
+    getFullAdress(id:string):void;
 }
 interface Address{
     id:number;
@@ -21,6 +18,9 @@ const client:Client={
         id:125,
         zip:'KY2 sup',
         city:'Ottwa'
+    },
+    getFullAdress(id:string){
+        return this.address.city;
     }
 }
 
@@ -31,6 +31,9 @@ const client2:Client={
         city:'Toronto',
         id:120,
         zip:'k2O'
+    },
+     getFullAdress(id:string){
+        return this.address.city;
     }
 }
 
